@@ -18,7 +18,7 @@ public class LogAdvice2 {
 	
 	@Around("allPointcut2()")
 	public Object aroundLosg(ProceedingJoinPoint pp) throws Throwable{
-		//사전, 사후 처리를 모두 해결하고자 할 때 사용하는 어드바이스이다.
+		//사전, 사후 처리를 모두 해결하고자 할 때 사용하는 어드바이스이다.dsfsdf
 		String methodName = pp.getSignature().getName();
 		
 		StopWatch stopWatch = new StopWatch();
