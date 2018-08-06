@@ -22,7 +22,7 @@ public class Notice{
 		this.writer = nWriter;
 	}
 
-	
+	//GOGO
 	@Override
 	public String toString() {
 		return "Notice [no=" + no + ", title=" + title + ", content=" + content + ", writer=" + writer + ", nCount="
