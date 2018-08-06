@@ -27,10 +27,11 @@ public class HomeController {
 		logger.info("Welcome home! The client locale is {}.", locale);
 		Date date = new Date();
 		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
-		
+		//TEST
 		String formattedDate = dateFormat.format(date);
 		
 		model.addAttribute("serverTime", formattedDate );
+		//GOGOGOGOGOGOOG
 		return "home";
 	}
 	
