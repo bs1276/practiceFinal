@@ -27,7 +27,7 @@ public class LogAdvice2 {
 		
 		stopWatch.stop();
 		
-		System.out.println(methodName + "() 메소드 수행  에 걸린 시간 : " + stopWatch.getTotalTimeMillis() + "(ms)초");
+		System.out.println(methodName + "() 메소드 수행       에 걸린 시간 : " + stopWatch.getTotalTimeMillis() + "(ms)초");
 		
 		return obj;
 	}
