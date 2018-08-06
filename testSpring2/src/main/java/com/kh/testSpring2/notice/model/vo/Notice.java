@@ -13,7 +13,7 @@ public class Notice{
 	private String writer;
 	private int nCount;
 	private Date nDate;
-	
+	//TEST
 	public Notice() { }
 	
 	public Notice(String nTitle, String nContent, String nWriter) {
