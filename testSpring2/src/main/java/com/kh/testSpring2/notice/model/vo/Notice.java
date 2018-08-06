@@ -25,7 +25,7 @@ public class Notice{
 	//GOGO
 	@Override
 	public String toString() {
-		return "Notice [no=" + no + ", title=" + title + ", content=" + content + ", writer=" + writer + ", nCount="
+		return "NoticTTe [no=" + no + ", title=" + title + ", content=" + content + ", writer=" + writer + ", nCount="
 				+ nCount + ", nDate=" + nDate + "]";
 	}
 
