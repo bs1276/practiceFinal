@@ -37,8 +37,7 @@ public class NoticeController {
 
 	@RequestMapping("insertNotice.do")
 	public String noticeInsert(Notice notice, @RequestParam(value = "file", required = false) MultipartFile file, HttpServletRequest request){
-		System.out.println(notice);
-		System.out.println("업로드 한 파일: " + file.getOriginalFilename());
+		System.out.println("업TTTT로드 한 파일: " + file.getOriginalFilename());
 		String root = request.getSession().getServletContext().getRealPath("resources");
 		String savePath = root + "\\nuploadFiles";
 		String filePath = null;

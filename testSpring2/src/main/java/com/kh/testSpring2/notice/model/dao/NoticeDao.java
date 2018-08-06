@@ -14,7 +14,7 @@ public class NoticeDao {
 	private SqlSessionTemplate sqlSession;
 
 	public void getNoticeList() {
-		System.out.println("test567");
+		System.out.println("test5TEWTWET67");
 	}
 
 	public List<Notice> selectNoticeList() {
