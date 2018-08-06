@@ -13,7 +13,7 @@ public class MemberController {
 	@RequestMapping("chkId.do")
 	public @ResponseBody Notice idDupCheck(String id){
 		System.out.println(id);
-		return new Notice("testtitle", "testcontent", "testwriter");
+		return new Notice("testtitWERWEle", "testcontent", "testwriter");
 	}
 	
 }
