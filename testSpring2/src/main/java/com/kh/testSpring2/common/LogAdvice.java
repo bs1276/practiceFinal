@@ -20,7 +20,7 @@ public class LogAdvice {
 	@Before("allPointcut()")  //Advice
 	public void printLog(JoinPoint jp) {
 		
-		System.out.println("호출 된 메소드 : " + jp.getSignature().getName());
-		log.info("로거  : " + jp.getSignature().getName());
+		System.out.println("  호출 된 메소드 : " + jp.getSignature().getName());
+		log.info("로  거  : " + jp.getSignature().getName());
 	}
 }
