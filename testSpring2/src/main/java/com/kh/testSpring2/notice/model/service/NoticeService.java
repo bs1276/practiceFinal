@@ -14,7 +14,7 @@ public class NoticeService {
 	NoticeDao noticeDao;
 
 	public void getNoticeList() {
-		System.out.println("test123");
+		System.out.println("test123123");
 		noticeDao.getNoticeList();
 	}
 
