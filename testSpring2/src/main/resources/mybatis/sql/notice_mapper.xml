@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="NoticeMapper">
+	<resultMap type="Notice" id="noticeMap">
+		<id property="no" column="nno"/>
+		<result property="title" column="ntitle"/>
+		<result property="writer" column="nwriter"/>
+		<result property="nCount" column="ncount"/>
+		<result property="nDate" column="ndate"/>
+	</resultMap>
+	<select id="selectNoticeList" resultType="Notice">
+		select nno as no, ntitle as title, nwriter as writer, ncount, ndate
+		from notice N
+		JOIN MEMBER M ON (N.NWRITER = M.USERID)
+	</select>
+	<select id="selectNotice" resultType="Notice">
+		select nno as no, ntitle as title, nwriter as writer, ncount, ndate, ncontent as content
+		from notice N
+		JOIN MEMBER M ON (N.NWRITER = M.USERID)
+		WHERE nno = #{no}
+	</select>
+	<insert id="insertNotice" parameterType="Notice">
+		insert into Notice
+		values ((select max(nno) + 1 from notice), #{title},#{writer}, 0, #{nDate}, #{content})
+	</insert>
+	<insert id="insertNotice2" parameterType="Notice">
+		insert into Notice2
+		values (30, #{title}, #{content}, #{writer}, 0, #{nDate})
+	</insert>
+	<update id="updateNotice" parameterType="Notice">
+		update notice
+		set ntitle = #{title}, ncontent = #{content}
+		where nno = #{no}
+	</update>
+</mapper>
